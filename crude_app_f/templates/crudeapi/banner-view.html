@@ -1,0 +1,17 @@
+{% extends 'crudeapi/base.html' %}
+{% block dashboard %}
+
+<div class="container" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-7 mx-auto">
+            <div class="card shadow p-2">
+                <div class="card">
+                    <img src="{{banner.image.url}}" alt="">
+                    <div class="card">{{ banner.title }}</div>
+                    <div class="card">{{ banner.http_link }}</div>
+                </div>
+            </div>
+    </div>
+</div>
+
+{% endblock dashboard %}
